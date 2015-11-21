@@ -16,3 +16,15 @@ block body
       input(type='submit') //submit: icon button
 
 //care about the space(2 space for 1 bound)
+
+//sailsSample->config-> policies
+//policies
+module.exports.policies = {
+  '*': ['passport', 'sessionAuth'],
+  'AuthController': {
+    '*': ['passport']
+  },
+  'UserController': {
+    'index': ['passport', 'sessionAuth'],
+    'find': []
+  }
