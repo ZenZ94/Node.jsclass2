@@ -1,0 +1,15 @@
+try {
+    var userConfig ={
+      username: 'keke',
+      email:'fu@gmail.com',
+      address:'xxd'
+  }
+  
+  var newUser = await User.create(userConfig);
+  newUser.username.should.be.equal('keke');
+  
+  console.log(newUser);
+    done();
+  }catch(e){
+   done(e);
+  }
