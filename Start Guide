@@ -1,0 +1,26 @@
+//terminal
+
+git clone https://github.com/ZenZ94/sailsSample.git
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+
+
+
+nvm install v4.2.2
+nvm alias default v4.2.2
+nvm use default
+
+//# install other service
+
+npm install -g sails
+npm install -g grunt-cli
+npm install -g bower
+
+sudo apt-get update
+sudo apt-get install build-essential
+sudo apt-get install ruby
+sudo gem install bootstrap-sass compass font-awesome-sass
+
+cd ~/sailsSample
+npm install
+grunt build
+npm start 
